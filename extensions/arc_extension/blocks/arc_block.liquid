@@ -1,0 +1,16 @@
+<span style="color: {{ block.settings.color }}">
+App blocks let you build powerful integrations with online store themes!
+</span>
+
+{% render "arc_snippet" %}
+{% schema %}
+  {
+    "name": "Hello World",
+    "target": "section",
+    "stylesheet": "arc_styles.css",
+    "javascript": "arc_scripts.js",
+    "settings": [
+      { "label": "Color", "id": "color", "type": "color", "default": "#000000" }
+    ]
+  }
+{% endschema %}
