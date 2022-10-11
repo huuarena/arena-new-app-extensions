@@ -1,1 +1,1 @@
-console.log(`ArenaCommerce extension success!`);
+console.log('Welcome to ArenaCommerce extension')

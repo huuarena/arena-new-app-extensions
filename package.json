@@ -12,8 +12,7 @@
     "deploy": "shopify app deploy",
     "serve": "cd web/ && yarn serve",
     "ngrok": "ngrok http --subdomain=arena-new-app-extensions --region=au 5000",
-    "dev_tunnel": "yarn dev --tunnel-url https://arena-new-app-extensions.au.ngrok.io:5000",
-    "dev_tunnel_ext": "yarn dev --tunnel-url https://arena-new-app-extensions.au.ngrok.io:5000 --theme 136271102177"
+    "develop": "yarn dev --tunnel-url https://arena-new-app-extensions.au.ngrok.io:5000 --theme 136271102177"
   },
   "dependencies": {
     "@shopify/app": "3.16.3",

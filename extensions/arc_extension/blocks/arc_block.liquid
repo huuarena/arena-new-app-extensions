@@ -1,16 +1,30 @@
-<span style="color: {{ block.settings.color }}">
-App blocks let you build powerful integrations with online store themes!
+
+
+<span class="" style="color: {{ block.settings.color }}">
+{{ block.settings.content }}
 </span>
 
 {% render "arc_snippet" %}
 {% schema %}
   {
-    "name": "Hello World",
+    "name": "Arena Extension",
     "target": "section",
+    "class": "arc-extension",
     "stylesheet": "arc_styles.css",
     "javascript": "arc_scripts.js",
     "settings": [
-      { "label": "Color", "id": "color", "type": "color", "default": "#000000" }
+      { 
+        "type": "textarea", 
+        "id": "content", 
+        "label": "Content", 
+        "default": "Welcome to ArenaCommerce extension!" 
+      },
+      { 
+        "type": "color", 
+        "id": "color", 
+        "label": "Color", 
+        "default": "#000000" 
+      }
     ]
   }
 {% endschema %}
